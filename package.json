@@ -3,7 +3,7 @@
   "name": "male-health-diagnostic",
   "private": true,
   "version": "1.0.0",
-  "main": "electron/main.js",
+  "main": "electron/main.cjs",
   "author": "Your Name",
   "description": "行不行",
   "scripts": {
@@ -41,7 +41,15 @@
     },
     "files": [
       "dist/**/*",
-      "electron/**/*"
+      "electron/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "public/images/",
+        "to": "images",
+        "filter": ["**/*"]
+      }
     ],
     "mac": {
       "target": "dmg",
