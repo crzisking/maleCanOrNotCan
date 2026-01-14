@@ -110,4 +110,4 @@ npm run build
 
 ## 十、License
 
-MIT License
+Apache License
